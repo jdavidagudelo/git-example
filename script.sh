@@ -14,7 +14,8 @@ pip install virtualenv virtualenvwrapper
 git fetch && git checkout jdavidagudelo/migrating_historic
 sudo apt-get install curl -y
 sudo apt-get install cython -y
-sudo apt-get install python3-dev 
+sudo apt-get install python3-dev -y
+sudo apt-get install build-essential ncurses-dev yodl -y
 sudo apt-get install python-dev libpng12-0 libpng12-dev libjpeg62 libjpeg62-dev libopenjpeg-dev libblas-dev liblapack-dev gfortran redis-server postgresql rabbitmq-server mongodb libxslt1-dev libcairo2-dev libpango1.0-dev libpq-dev libffi-dev libgeos-dev -y
 sudo apt-get install libxml2-dev libxslt1-dev -y
 sudo apt-get install build-essential python-dev python-setuptools python-pip python-smbus -y
