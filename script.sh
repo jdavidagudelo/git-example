@@ -38,3 +38,13 @@ cd UbidotsDev/bin
 source activate
 pip install --upgrade pip
 pip install requirements.pip
+cd ~/
+wget -q -O - http://sourceforge.net/projects/zsh/files/zsh/5.2/zsh-5.2.tar.gz/download | tar xvzf -
+cd zsh-5.2/
+./Util/preconfig
+./configure
+make
+sudo make install
+which zsh | sudo tee -a /etc/shells
+sudo chsh -s "$(which zsh)" "${USER}"
+
